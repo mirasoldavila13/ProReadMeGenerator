@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
-import { type } from 'os';
-// TODO: Create an array of questions for user input
+import { generateMarkdown } from './utils/generateMarkdown.js';
+
+
 const questions = [
     {
         type: 'input',
@@ -12,7 +12,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Motivation',
+        name: 'motivation',
         message: 'What was your motivation for building this project?',
     },
     {
@@ -75,62 +75,14 @@ const questions = [
 
 ];
 
-function generateReadMe(answers){
-    return `# ${answers.title}
 
-## Description
-
-${answers.Motivation} ${answers.problem} ${answers.learned}
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Badges](#badges)
-- [Features](#features)
-- [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
-
-## Installation
-${answers.installation}
-
-## Usage
-${answers.usage}
-
-## Credits
-${answers.credits}
-
-## License
-
-This project is licensed under the ${answers.license} license.
-
-## Badges
-${answers.badges.split(',').map(badge => `![badge](${badge.trim()})`).join('\n')}
-
-## Features
-${answers.features}
-
-## How to Contribute
-${answers.contributing}
-
-## Tests
-${answers.tests}
-
-## Questions
-If you have any questions about the project, you can contact me via my GitHub profile at [${answers.github}](https://github.com/${answers.github}).
-`;
-}
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) =>{
-        const readmeAnswers = generateReadMe(answers);
-
+        const markdownContent = generateMarkdown(answers);
         //ensure the generated directory exists
         const outputDir = path.join(process.cwd(), 'Generated');
         if(!fs.existsSync(outputDir)){
@@ -138,7 +90,7 @@ function init() {
         }
 
         //write the README file in the generated directory
-        writeToFile(path.join('Generated', 'README.md', readmeAnswers));
+        writeToFile(path.join('Generated', 'README.md', markdownContent));
 
         console.log('Successfully created README.md in the Generated folder!');
     }).catch((error) => {
@@ -146,5 +98,4 @@ function init() {
     });
 }
 
-// Function call to initialize app
 init();
