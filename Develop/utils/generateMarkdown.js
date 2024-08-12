@@ -1,4 +1,3 @@
-
 function renderLicenseBadge(license) {
   return (!license || license === 'None')
     ? ''
@@ -11,7 +10,6 @@ function renderLicenseLink(license) {
     : `- [License](#license)`;
 }
 
-
 function renderLicenseSection(license) {
   return (!license || license === 'None')
     ? ''
@@ -20,14 +18,29 @@ function renderLicenseSection(license) {
   This project is licensed under the ${license} license.`;
 }
 
+// Keep user input as it is for lists to preserve numbering and dashes
+function formatList(input) {
+  return input
+    .split(/(?=\d\.)|(?=\-\s)/) // Split when it sees numbers like "1." or dashes like "- "
+    .map(item => item.trim())
+    .join('\n'); // Join with newlines to preserve list formatting
+}
+
+// Ensure badges are correctly formatted as markdown images
+function formatBadges(input) {
+  return input
+    .split(',') // Split based on commas if user enters multiple badges
+    .map(badge => `![badge](${badge.trim()})`)
+    .join('\n'); // Join badges on separate lines
+}
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title || 'Project Title'}
 
 ${renderLicenseBadge(data.license)}
 
 ## Description
-${data.motivation} ${data.problem} ${data.learned}
+${data.motivation || ''} ${data.problem || ''} ${data.learned || ''}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -40,7 +53,7 @@ ${renderLicenseLink(data.license)}
 - [Tests](#tests)
 
 ## Installation
-${data.installation}
+${formatList(data.installation)}
 
 ## Usage
 ${data.usage}
@@ -51,21 +64,20 @@ ${data.credits}
 ${renderLicenseSection(data.license)}
 
 ## Badges
-${data.badges.split(',').map(badge => `![badge](${badge.trim()})`).join('\n')}
+${formatBadges(data.badges)}
 
 ## Features
-${data.features}
+${formatList(data.features)}
 
 ## How to Contribute
-${data.contributing}
+${formatList(data.contributing)}
 
 ## Tests
-${data.tests}
+${formatList(data.tests)}
 
 ## Questions
-If you have any questions about the project, you can contact me via my GitHub profile at [${data.github}](https://github.com/${data.github}).
+If you have any questions about the project, you can contact me via my GitHub profile at [${data.github || ''}](https://github.com/${data.github || ''}).
 `;
 }
-
 
 export { renderLicenseBadge, renderLicenseLink, renderLicenseSection, generateMarkdown };

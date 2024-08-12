@@ -1,15 +1,25 @@
 {
-  "name": "static-site",
+  "name": "proreadmegenerator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command-line application that generates a professional README.md file.",
   "main": "index.js",
   "type": "module",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/mirasoldavila13/ProReadMeGenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mirasoldavila13/ProReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/mirasoldavila13/ProReadMeGenerator",
+  "keywords": [],
+  "author": "Mirasol Davila",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "^10.1.8"
   }
 }

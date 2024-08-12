@@ -90,7 +90,7 @@ function init() {
         }
 
         //write the README file in the generated directory
-        writeToFile(path.join('Generated', 'README.md', markdownContent));
+        writeToFile(path.join('Generated', 'README.md'), markdownContent);
 
         console.log('Successfully created README.md in the Generated folder!');
     }).catch((error) => {
