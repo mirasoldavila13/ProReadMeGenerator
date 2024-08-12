@@ -95,15 +95,15 @@ function init() {
     inquirer.prompt(questions).then((answers) =>{
         const markdownContent = generateMarkdown(answers);
         //ensure the generated directory exists
-        const outputDir = path.join(process.cwd(), 'Generated');
+        const outputDir = path.join(process.cwd(), 'dist');
         if(!fs.existsSync(outputDir)){
             fs.mkdirSync(outputDir);
         }
 
         //write the README file in the generated directory
-        writeToFile(path.join('Generated', 'README.md'), markdownContent);
+        writeToFile(path.join('dist', 'README.md'), markdownContent);
 
-        console.log('Successfully created README.md in the Generated folder!');
+        console.log('Successfully created README.md in the Dist folder!');
     }).catch((error) => {
         console.error('Error generating README: ',error);
     });
