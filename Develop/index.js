@@ -77,6 +77,12 @@ const questions = [
         name: 'tests',
         message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them.',
     },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address? (Leave blank to use a project-specific email)',
+        default: answers => `contact@${answers.title.replace(/\s+/g, '').toLowerCase()}.com`,
+    },
 
     {
         type: 'input',
@@ -94,16 +100,13 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) =>{
         const markdownContent = generateMarkdown(answers);
-        //ensure the generated directory exists
+
         const outputDir = path.join(process.cwd(), 'dist');
         if(!fs.existsSync(outputDir)){
             fs.mkdirSync(outputDir);
         }
 
-        //write the README file in the generated directory
         writeToFile(path.join('dist', 'README.md'), markdownContent);
-
-        console.log('Successfully created README.md in the Dist folder!');
     }).catch((error) => {
         console.error('Error generating README: ',error);
     });

@@ -4,7 +4,7 @@
 
 ## Description
 
-I was motivated to build the Professional README Generator to simplify the process of creating professional high-quality README files for developers. The Professional README Generator automates the creation of professional, well-structured README files, saving developers time and ensuring consistency. I learned how to effectively use Node.js and the Inquirer package to create command-line applications and generate dynamic markdown files.
+I was motivated to build the Professional README Generator to simplify the process of creating professional high-quality README files for developers. The Professional README Generator automates the creation of professional, well-structured README files, saving developers time and ensuring consistency. I learned how to effectively use Node.js, the Inquirer package, and modular JavaScript design to create dynamic markdown files.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ To use the Professional README Generator, simply run npm start or node index.js 
 
 ## Credits
 
-his project was developed by Mirasol Davila https://github.com/mirasoldavila13
+This project was developed by Mirasol Davila. https://github.com/mirasoldavila13
 
 ## License
 
@@ -71,4 +71,4 @@ To test the Professional README Generator, follow these steps:
 
 ## Questions
 
-If you have any questions about the project, you can contact me via my GitHub profile at [mirasoldavila13](https://github.com/mirasoldavila13).
+If you have any questions about the project, you can contact me via my GitHub profile at [mirasoldavila13](https://github.com/mirasoldavila13) or via email at contact@professionalreadmegenerator.com.
