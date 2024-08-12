@@ -2,18 +2,18 @@ function renderLicenseBadge(license) {
   if (!license || license === 'None') return '';
 
   const licenseBadges = {
-      'MIT': 'MIT-blue.svg',
-      'Apache 2.0': 'Apache_2.0-blue.svg',
-      'GPLv3': 'GPLv3-blue.svg',
-      'BSD 3-Clause': 'BSD_3--Clause-blue.svg',
-      'BSD 2-Clause': 'BSD_2--Clause-blue.svg',
-      'LGPL v3': 'LGPL_v3-blue.svg',
-      'AGPL v3': 'AGPL_v3-blue.svg',
-      'MPL 2.0': 'MPL_2.0-blue.svg',
-      'EPL 2.0': 'EPL_2.0-blue.svg',
+      'MIT': 'MIT-blue',
+      'Apache 2.0': 'Apache_2.0-blue',
+      'GPLv3': 'GPLv3-blue',
+      'BSD 3-Clause': 'BSD_3--Clause-blue',
+      'BSD 2-Clause': 'BSD_2--Clause-blue',
+      'LGPL v3': 'LGPL_v3-blue',
+      'AGPL v3': 'AGPL_v3-blue',
+      'MPL 2.0': 'MPL_2.0-blue',
+      'EPL 2.0': 'EPL_2.0-blue',
   };
 
-  return `![License](https://img.shields.io/badge/License-${licenseBadges[license]}-blue.svg)`;
+  return `![License](https://img.shields.io/badge/License-${licenseBadges[license]}.svg)`;
 }
 
 function renderLicenseLink(license) {

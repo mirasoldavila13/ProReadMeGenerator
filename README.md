@@ -1,11 +1,13 @@
 # Professional README Generator
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description
-I was motivated to build the Professional README Generator to simplify the process of creating professional high-quality README files for developers. The Professional README Generator automates the creation of professional, well-structured README files. I learned how to effectively use Node.js and the Inquirer package to create command-line applications.
+
+I was motivated to build the Professional README Generator to simplify the process of creating professional high-quality README files for developers. The Professional README Generator automates the creation of professional, well-structured README files, saving developers time and ensuring consistency. I learned how to effectively use Node.js and the Inquirer package to create command-line applications and generate dynamic markdown files.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -16,27 +18,32 @@ I was motivated to build the Professional README Generator to simplify the proce
 - [Tests](#tests)
 
 ## Installation
+
 1. Clone the repository: `git clone https://github.com/mirasoldavila13/ProReadMeGenerator.git`
 2. Navigate to the project directory: `cd ProReadMeGenerator/Develop`
 3. Install the required dependencies: `npm install`
 4. Run the application: `npm start` or `node index.js`
 
 ## Usage
-To use the Professional README Generator, simply run `npm start` or `node index.js` in your terminal. You will be prompted to answer several questions about your project. Once you've answered all the questions, a professional README.md file will be generated and saved in the `Generated` directory.
+
+To use the Professional README Generator, simply run npm start or node index.js in your terminal. You will be prompted to answer several questions about your project. Once you've answered all the questions, a professional README.md file will be generated and saved in the dist folder.
 
 ## Credits
-This project was developed by Mirasol Davila https://github.com/mirasoldavila13
+
+his project was developed by Mirasol Davila https://github.com/mirasoldavila13
 
 ## License
 
-  This project is licensed under the MIT license.
+This project is licensed under the MIT license.
 
 ## Badges
+
 ![badge](https://img.shields.io/badge/license-MIT-blue.svg)
 ![badge](https://img.shields.io/github/repo-size/mirasoldavila13/ProReadMeGenerator)
 ![badge](https://img.shields.io/github/issues/mirasoldavila13/ProReadMeGenerator)
 
 ## Features
+
 - **Dynamic README Creation**: Generate a complete and professional README file based on user input.
 - **License Badges**: Automatically include license badges and links in your README.
 - **Custom Sections**: Add your own features, contribution guidelines, and tests.
@@ -44,7 +51,9 @@ This project was developed by Mirasol Davila https://github.com/mirasoldavila13
 - **Modular Codebase**: Well-structured code for easy maintenance and extension.
 
 ## How to Contribute
+
 Contributions are welcome! To contribute to the Professional README Generator, follow these steps:
+
 1. **Fork the Repository**: Click the 'Fork' button at the top right of this page to create a copy of this repository under your GitHub account.
 2. **Clone Your Fork**: Use `git clone` to download the forked repository to your local machine.
 3. **Create a Branch**: Create a new branch for your feature or fix using `git checkout -b branch-name`.
@@ -54,9 +63,12 @@ Contributions are welcome! To contribute to the Professional README Generator, f
 7. **Create a Pull Request**: Navigate to the original repository and click the 'New Pull Request' button. Provide a detailed description of your changes in the pull request.
 
 ## Tests
+
 To test the Professional README Generator, follow these steps:
+
 1. **Manual Testing**: Run the application (`npm start` or `node index.js`) and check the generated README file for accuracy.
-2. **Review the Output**: After running the application, review the generated README in the `dist` directory for completeness and correctness.
+2. **Review the Output**: After running the application, review the generated README in the `dist` folder for completeness and correctness.
 
 ## Questions
+
 If you have any questions about the project, you can contact me via my GitHub profile at [mirasoldavila13](https://github.com/mirasoldavila13).
