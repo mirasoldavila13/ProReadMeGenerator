@@ -43,7 +43,9 @@ This project is licensed under the MIT license.
 
 ![badge](https://img.shields.io/badge/license-MIT-blue.svg)
 ![badge](https://img.shields.io/github/repo-size/mirasoldavila13/ProReadMeGenerator)
-![badge](https://img.shields.io/github/issues/mirasoldavila13/ProReadMeGenerator)
+![badge](https://img.shields.io/github/issues/mirasoldavila13/ProReadMeGenerator?label=Issues%20%28Currently%200%29)
+![badge](https://img.shields.io/github/forks/mirasoldavila13/ProReadMeGenerator)
+![badge](https://img.shields.io/github/stars/mirasoldavila13/ProReadMeGenerator)
 
 ## Features
 
@@ -80,4 +82,4 @@ If you have any questions about the project, you can contact me via my GitHub pr
 
 Here is a walkthrough video that demonstrates the functionality of the Professional README Generator, including how to invoke the application, respond to prompts, and review the generated README file.
 
-[Walkthrough Video Link](https://drive.google.com/file/d/13z8Wv8oUvGvS6aed-NzgwhY-O6MEJANt/view?usp=drive_link)
+[Walkthrough Video Link](https://drive.google.com/file/d/13z8Wv8oUvGvS6aed-NzgwhY-O6MEJANt/view?usp=sharing)
