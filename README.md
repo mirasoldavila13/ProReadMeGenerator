@@ -16,6 +16,7 @@ I was motivated to build the Professional README Generator to simplify the proce
 - [Features](#features)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
+- [Walkthrough Video](#walkthrough-video)
 
 ## Installation
 
@@ -27,6 +28,8 @@ I was motivated to build the Professional README Generator to simplify the proce
 ## Usage
 
 To use the Professional README Generator, simply run npm start or node index.js in your terminal. You will be prompted to answer several questions about your project. Once you've answered all the questions, a professional README.md file will be generated and saved in the dist folder.
+
+> **Note:** The README for this project was generated using the Professional README Generator itself. A sample README.md has been included in the `dist` folder to demonstrate the tool's capabilities.
 
 ## Credits
 
@@ -72,3 +75,9 @@ To test the Professional README Generator, follow these steps:
 ## Questions
 
 If you have any questions about the project, you can contact me via my GitHub profile at [mirasoldavila13](https://github.com/mirasoldavila13) or via email at contact@professionalreadmegenerator.com.
+
+## Walkthrough Video
+
+Here is a walkthrough video that demonstrates the functionality of the Professional README Generator, including how to invoke the application, respond to prompts, and review the generated README file.
+
+[Walkthrough Video Link](https://drive.google.com/file/d/13z8Wv8oUvGvS6aed-NzgwhY-O6MEJANt/view?usp=drive_link)
