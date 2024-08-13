@@ -61,7 +61,7 @@ ${renderLicenseLink(data.license)}
 - [Features](#features)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
--[Questions](#questions)
+- [Questions](#questions)
 
 ## Installation
 ${formatList(data.installation)}
